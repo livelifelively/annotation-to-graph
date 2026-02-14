@@ -1,0 +1,20 @@
+{
+  "name": "annotation-to-graph",
+  "version": "1.0.0",
+  "description": "Convert annotation JSON files to Dgraph GraphQL mutations",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --no-warnings --loader ts-node/esm src/index.ts",
+    "load": "node --no-warnings --loader ts-node/esm src/load.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  }
+}
