@@ -33,6 +33,8 @@ export type EntityCategory =
   | 'service'
   | 'benefit'
   | 'citizen_attribute'
+  | 'citizen_attribute_individual'
+  | 'citizen_attribute_group'
   | 'value'
   | 'official_role'
   | 'region'
@@ -81,6 +83,16 @@ export const CATEGORY_TYPE_MAP: Record<EntityCategory, DgraphTypeMapping> = {
     dgraphType: '_Citizen_Attribute_Category_',
     nameIdPrefix: 'cattr',
     nameField: 'citizen_attribute_category',
+  },
+  citizen_attribute_individual: {
+    dgraphType: '_Citizen_Attribute_Category_',
+    nameIdPrefix: 'cattr',
+    nameField: 'citizen_attribute_category',
+  },
+  citizen_attribute_group: {
+    dgraphType: '_Citizen_Group_Attribute_Category_',
+    nameIdPrefix: 'gattr',
+    nameField: 'citizen_group_attribute_category',
   },
   value: {
     dgraphType: '_Metric_',
